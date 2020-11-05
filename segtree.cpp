@@ -27,7 +27,7 @@ struct RMQ {
       dat[i] = min(dat[i * 2 + 1], dat[i * 2 + 2]);
     }
   }
-  // the minimum element of [a,b)
+  
   T query(int a, int b) { return query_sub(a, b, 0, 0, n); }
   T query_sub(int a, int b, int k, int l, int r) {
     if (r <= a || b <= l) {
